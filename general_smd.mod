@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  06/11/2015 21:57:10
+PCBNEW-LibModule-V1  07/11/2015 22:12:18
 # encoding utf-8
 Units mm
 $INDEX
@@ -7,9 +7,11 @@ ICSP-POGO
 NR60xx
 SOD-123
 SSOP-20-MCHIP
+SW-SMD
 UART-POGO
 USB-A
 VSSOP-10-DGS
+XTAL-SMD-UM
 $EndINDEX
 $MODULE EGBT-046S
 Po 0 0 0 15 55871C58 00000000 ~~
@@ -263,55 +265,55 @@ Po 6.5 -9
 $EndPAD
 $EndMODULE EGBT-046S
 $MODULE ICSP-POGO
-Po 0 0 0 15 563D0489 00000000 ~~
+Po 0 0 0 15 563E5A6D 00000000 ~~
 Li ICSP-POGO
 Sc 0
 AR 
 Op 0 0 0
-T0 0 5.4 1 1 0 0.15 N V 21 N "ICSP-POGO"
-T1 0 0 1 1 0 0.15 N V 21 N "VAL**"
-DS -2.2 1.2 -2.2 4 0.15 21
-DS -2.2 4 2.2 4 0.15 21
-DS 2.2 4 2.2 1.2 0.15 21
-DS 2.2 1.2 -2.2 1.2 0.15 21
+T0 0 2.75 1 1 0 0.15 N V 21 N "ICSP-POGO"
+T1 0 -2.49 1 1 0 0.15 N V 21 N "VAL**"
+DS -2.5 -1.6 -2.5 1.6 0.15 21
+DS -2.5 1.6 2.5 1.6 0.15 21
+DS 2.5 1.6 2.5 -1.6 0.15 21
+DS 2.5 -1.6 -2.5 -1.6 0.15 21
 $PAD
-Sh "1" C 0.8 0.8 0 0 0
-Dr 0.4 0 0
+Sh "1" C 1.1 1.1 0 0 0
+Dr 0.7 0 0
 At STD N 00E0FFFF
 Ne 0 ""
-Po -1.2 2
+Po -1.5 -0.75
 .LocalClearance 0.1
 $EndPAD
 $PAD
-Sh "2" C 0.8 0.8 0 0 0
-Dr 0.4 0 0
+Sh "2" C 1.1 1.1 0 0 0
+Dr 0.7 0 0
 At STD N 00E0FFFF
 Ne 0 ""
-Po 0 2
+Po 0 -0.75
 .LocalClearance 0.1
 $EndPAD
 $PAD
-Sh "3" C 0.8 0.8 0 0 0
-Dr 0.4 0 0
+Sh "3" C 1.1 1.1 0 0 0
+Dr 0.7 0 0
 At STD N 00E0FFFF
 Ne 0 ""
-Po 1.2 2
+Po 1.5 -0.75
 .LocalClearance 0.1
 $EndPAD
 $PAD
-Sh "4" C 0.8 0.8 0 0 0
-Dr 0.4 0 0
+Sh "4" C 1.1 1.1 0 0 0
+Dr 0.7 0 0
 At STD N 00E0FFFF
 Ne 0 ""
-Po -1.2 3.2
+Po -1.5 0.75
 .LocalClearance 0.1
 $EndPAD
 $PAD
-Sh "5" C 0.8 0.8 0 0 0
-Dr 0.4 0 0
+Sh "5" C 1.1 1.1 0 0 0
+Dr 0.7 0 0
 At STD N 00E0FFFF
 Ne 0 ""
-Po 0 3.2
+Po 0 0.75
 .LocalClearance 0.1
 $EndPAD
 $EndMODULE ICSP-POGO
@@ -370,23 +372,23 @@ Po 1.64 0
 $EndPAD
 $EndMODULE SOD-123
 $MODULE SSOP-20-MCHIP
-Po 0 0 0 15 562D6438 00000000 ~~
+Po 0 0 0 15 563E0936 00000000 ~~
 Li SSOP-20-MCHIP
 Sc 0
 AR 
 Op 0 0 0
-T0 0 10.37 1 1 0 0.15 N V 21 N "SSOP-20-MCHIP"
-T1 0 1.57 1 1 0 0.15 N V 21 N "VAL**"
-DS -2.5 2.5 -2.5 9.35 0.15 21
-DS -2.5 9.35 2.5 9.35 0.15 21
-DS 2.5 9.35 2.5 2.5 0.15 21
-DS -2.5 2.5 2.5 2.5 0.15 21
+T0 0 4.98 1 1 0 0.15 N V 21 N "SSOP-20-MCHIP"
+T1 0 -4.09 1 1 0 0.15 N V 21 N "VAL**"
+DS -2.5 -3.17 -2.5 3.68 0.15 21
+DS -2.5 3.68 2.5 3.68 0.15 21
+DS 2.5 3.68 2.5 -3.17 0.15 21
+DS -2.5 -3.17 2.5 -3.17 0.15 21
 $PAD
 Sh "1" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.275 3
+Po -3.275 -2.67
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -395,7 +397,7 @@ Sh "2" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.275 3.65
+Po -3.275 -2.02
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -404,7 +406,7 @@ Sh "3" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.275 4.3
+Po -3.275 -1.37
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -413,7 +415,7 @@ Sh "4" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.275 4.95
+Po -3.275 -0.72
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -422,7 +424,7 @@ Sh "5" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.275 5.6
+Po -3.275 -0.07
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -431,7 +433,7 @@ Sh "6" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.275 6.25
+Po -3.275 0.58
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -440,7 +442,7 @@ Sh "7" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.275 6.9
+Po -3.275 1.23
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -449,7 +451,7 @@ Sh "8" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.275 7.55
+Po -3.275 1.88
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -458,7 +460,7 @@ Sh "9" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.275 8.2
+Po -3.275 2.53
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -467,7 +469,7 @@ Sh "10" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.275 8.85
+Po -3.275 3.18
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -476,7 +478,7 @@ Sh "11" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.275 8.85
+Po 3.275 3.18
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -485,7 +487,7 @@ Sh "12" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.275 8.2
+Po 3.275 2.53
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -494,7 +496,7 @@ Sh "13" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.275 7.55
+Po 3.275 1.88
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -503,7 +505,7 @@ Sh "14" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.275 6.9
+Po 3.275 1.23
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -512,7 +514,7 @@ Sh "15" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.275 6.25
+Po 3.275 0.58
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -521,7 +523,7 @@ Sh "16" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.275 5.6
+Po 3.275 -0.07
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -530,7 +532,7 @@ Sh "17" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.275 4.95
+Po 3.275 -0.72
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -539,7 +541,7 @@ Sh "18" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.275 4.3
+Po 3.275 -1.37
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -548,7 +550,7 @@ Sh "19" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.275 3.65
+Po 3.275 -2.02
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -557,67 +559,108 @@ Sh "20" R 1.35 0.4 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.275 3
+Po 3.275 -2.67
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
 $EndMODULE SSOP-20-MCHIP
+$MODULE SW-SMD
+Po 0 0 0 15 563E35D9 00000000 ~~
+Li SW-SMD
+Sc 0
+AR 
+Op 0 0 0
+T0 0 6.85 1 1 0 0.15 N V 21 N "SW-SMD"
+T1 0 -6.6 1 1 0 0.15 N V 21 N "VAL**"
+DS -3 -3 -3 3 0.15 21
+DS -3 3 3 3 0.15 21
+DS 3 3 3 -3 0.15 21
+DS 3 -3 -3 -3 0.15 21
+$PAD
+Sh "1" R 1.4 2.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.25 -4.55
+$EndPAD
+$PAD
+Sh "2" R 1.4 2.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.25 4.55
+$EndPAD
+$PAD
+Sh "3" R 1.4 2.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.25 4.55
+$EndPAD
+$PAD
+Sh "4" R 1.4 2.1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.25 -4.55
+$EndPAD
+$EndMODULE SW-SMD
 $MODULE UART-POGO
-Po 0 0 0 15 563D060C 00000000 ~~
+Po 0 0 0 15 563E5B1F 00000000 ~~
 Li UART-POGO
 Sc 0
 AR 
 Op 0 0 0
-T0 0 4.43 1 1 0 0.15 N V 21 N "UART-POGO"
-T1 0 0 1 1 0 0.15 N V 21 N "VAL**"
-DS -2 1.2 -2 2.8 0.15 21
-DS -2 2.8 2 2.8 0.15 21
-DS 2 2.8 2 1.2 0.15 21
-DS 2 1.2 -2 1.2 0.15 21
+T0 0 1.96 1 1 0 0.15 N V 21 N "UART-POGO"
+T1 0 -1.9 1 1 0 0.15 N V 21 N "VAL**"
+DS -2.3 -0.8 -2.3 0.8 0.15 21
+DS -2.3 0.8 2.3 0.8 0.15 21
+DS 2.3 0.8 2.3 -0.8 0.15 21
+DS 2.3 -0.8 -2.3 -0.8 0.15 21
 $PAD
-Sh "1" C 0.8 0.8 0 0 0
-Dr 0.4 0 0
+Sh "1" C 1.1 1.1 0 0 0
+Dr 0.7 0 0
 At STD N 00E0FFFF
 Ne 0 ""
-Po -1.2 2
+Po -1.5 0
 .LocalClearance 0.1
 $EndPAD
 $PAD
-Sh "2" C 0.8 0.8 0 0 0
-Dr 0.4 0 0
+Sh "2" C 1.1 1.1 0 0 0
+Dr 0.7 0 0
 At STD N 00E0FFFF
 Ne 0 ""
-Po 0 2
+Po 0 0
 .LocalClearance 0.1
 $EndPAD
 $PAD
-Sh "3" C 0.8 0.8 0 0 0
-Dr 0.4 0 0
+Sh "3" C 1.1 1.1 0 0 0
+Dr 0.7 0 0
 At STD N 00E0FFFF
 Ne 0 ""
-Po 1.2 2
+Po 1.5 0
 .LocalClearance 0.1
 $EndPAD
 $EndMODULE UART-POGO
 $MODULE USB-A
-Po 0 0 0 15 55F88DAD 00000000 ~~
+Po 0 0 0 15 563E08F5 00000000 ~~
 Li USB-A
 Sc 0
 AR 
 Op 0 0 0
-T0 0.01 13.16 1 1 0 0.15 N V 21 N "USB-A"
-T1 0 0 1 1 0 0.15 N V 21 N "VAL**"
-DS -4.6 2.5 4.6 2.5 0.15 21
-DS -4.6 12 -4.6 1 0.15 21
-DS -4.6 1 4.6 1 0.15 21
-DS 4.6 1 4.6 12 0.15 21
-DS 4.6 12 -4.6 12 0.15 21
+T0 0 7.36 1 1 0 0.15 N V 21 N "USB-A"
+T1 0 -5.58 1 1 0 0.15 N V 21 N "VAL**"
+DS -4.6 -3.24 4.6 -3.24 0.15 21
+DS -4.6 6.26 -4.6 -4.74 0.15 21
+DS -4.6 -4.74 4.6 -4.74 0.15 21
+DS 4.6 -4.74 4.6 6.26 0.15 21
+DS 4.6 6.26 -4.6 6.26 0.15 21
 $PAD
 Sh "1" R 1.3 1.7 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -3.5 10.5
+Po -3.5 4.76
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -626,7 +669,7 @@ Sh "2" R 1.3 1.7 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po -1 10.5
+Po -1 4.76
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -635,7 +678,7 @@ Sh "3" R 1.3 1.7 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 1 10.5
+Po 1 4.76
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -644,7 +687,7 @@ Sh "4" R 1.3 1.7 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
-Po 3.5 10.5
+Po 3.5 4.76
 .SolderMask 0.1
 .LocalClearance 0.1
 $EndPAD
@@ -653,14 +696,14 @@ Sh "5" C 2.4 2.4 0 0 0
 Dr 1.8 0 0
 At STD N 00E0FFFF
 Ne 0 ""
-Po -2.25 8.15
+Po -2.25 2.41
 $EndPAD
 $PAD
 Sh "6" C 2.4 2.4 0 0 0
 Dr 1.8 0 0
 At STD N 00E0FFFF
 Ne 0 ""
-Po 2.25 8.15
+Po 2.25 2.41
 $EndPAD
 $EndMODULE USB-A
 $MODULE VSSOP-10-DGS
@@ -756,4 +799,45 @@ Po 1.9875 -1
 .LocalClearance 0.1
 $EndPAD
 $EndMODULE VSSOP-10-DGS
+$MODULE XTAL-SMD-UM
+Po 0 0 0 15 563E08CD 00000000 ~~
+Li XTAL-SMD-UM
+Sc 0
+AR 
+Op 0 0 0
+T0 0 2.4 1 1 0 0.15 N V 21 N "XTAL-SMD-UM"
+T1 0 -2.17 1 1 0 0.15 N V 21 N "VAL**"
+DS -1.7 -1.3 -1.7 1.3 0.15 21
+DS -1.7 1.3 1.7 1.3 0.15 21
+DS 1.7 1.3 1.7 -1.3 0.15 21
+DS 1.7 -1.3 -1.7 -1.3 0.15 21
+$PAD
+Sh "1" R 1 0.75 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.1 -0.84
+$EndPAD
+$PAD
+Sh "2" R 1 0.75 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.1 -0.84
+$EndPAD
+$PAD
+Sh "3" R 1 0.75 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.1 0.91
+$EndPAD
+$PAD
+Sh "4" R 1 0.75 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.1 0.91
+$EndPAD
+$EndMODULE XTAL-SMD-UM
 $EndLIBRARY
